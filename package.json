@@ -23,7 +23,7 @@
     "webdriver-manager": "webdriver-manager",
     "webdriver:start": "npm run webdriver-manager start",
     "webdriver:update": "npm run webdriver-manager update",
-    "tslint": "tslint",
+    "tslint": "tslint"
   },
   "repository": {
     "type": "git",
