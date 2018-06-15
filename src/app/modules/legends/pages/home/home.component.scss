@@ -117,6 +117,7 @@ home-component {
           border: solid 0.8px #ffffff;
           background: none;
           color: #ffffff;
+          -webkit-transition: all .3s ease-in-out;
         }
         &__ether {
           img {
