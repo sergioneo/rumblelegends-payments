@@ -15,7 +15,6 @@ import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/catch';
 import { AppsModel } from '../../models';
 import { filter } from 'rxjs/operator/filter';
-import { LoadingProviders, ModalAlertProvider } from '../../../cross';
 import CONSTANTS from '@bip/constants';
 
 @Injectable()

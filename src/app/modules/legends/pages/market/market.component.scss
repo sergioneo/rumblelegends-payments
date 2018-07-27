@@ -1,0 +1,26 @@
+market-component {
+  .search {
+    display: flex;
+    margin-top: 11px;
+    justify-content: center;
+    button {
+      width: 96%;
+      height: 25px;
+      border: 1px solid #4cd964;
+      background-color: Transparent;
+      background-repeat:no-repeat;
+      font-size: 0.875em;
+      color: #ffffff;
+      overflow: hidden;
+      outline:none;
+      cursor: pointer;
+    }
+  }
+
+  .title {
+    color: #ffffff;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+}

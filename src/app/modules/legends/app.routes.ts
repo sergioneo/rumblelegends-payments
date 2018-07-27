@@ -7,6 +7,11 @@ const ROUTES: Routes = [
 		loadChildren: './pages/home/home.module#HomeModule',
 		data: { preload: true },
 	},
+	{
+		path: 'market',
+		loadChildren: './pages/market/market.module#MarketModule',
+		data: { preload: true },
+	},
 ];
 
 export const LegendsRouter = RouterModule.forChild(ROUTES);
