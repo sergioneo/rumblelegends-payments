@@ -7,9 +7,17 @@ header-component {
     align-items: center;
     font-size: 1.125em;
     &__left {
-
+      img {
+        padding-left: 36px;
+        height: 16px;
+        width: 171px;
+      }
     }
     &__nav {
+      @media (min-width: 320px) and (max-width: 480px) {
+        display: none;
+      }
+
       flex: 1;
       display: flex;
       justify-content: flex-end;

@@ -33,7 +33,7 @@
     transition: 0.25s ease-in-out;
   }
   &:focus-within label {
-    color: $bech_color;
+    // color: $bech_color;
   }
   input,
   select,
@@ -56,11 +56,11 @@
     }
     &:focus {
       outline: 0;
-      border: solid 1px $bech_color;
-      color: $font_color;
+      // border: solid 1px $bech_color;
+      // color: $font_color;
     }
     &:focus+label {
-      color: #cc0000 !important;
+      // color: #cc0000 !important;
     }
   }
   .info-text {
@@ -82,7 +82,11 @@
 }
 
 input.ng-invalid.ng-dirty.ng-invalid.ng-touched {
-  border: solid 1px $red_color;
+  // border: solid 1px $red_color;
+}
+
+input:focus {
+  outline:0px;
 }
 
 // RADIOS
