@@ -15,7 +15,11 @@
   <img src="legends/assets/img/" alt="">
 </div>
 
-<card-component></card-component>
+
+<div class="lists-cards">
+  <card-component *ngFor="let item of cardsService;" [card]="item"></card-component>
+</div>
+
 
 <div class="pager">
   <span class="pager__active">1</span>
@@ -25,3 +29,6 @@
   <span>5</span>
   <span>6</span>
 </div>
+
+
+<footer-component></footer-component>

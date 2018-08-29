@@ -2,14 +2,16 @@
 import { NgModule } from '@angular/core';
 
 // Modules
-import { HeadertModule, TabsModule, CardModule } from '../../../cross';
+import { CommonModule } from '@angular/common';
+import { HeadertModule, TabsModule, CardModule, FooterModule } from '../../../cross';
 
 // Components
 import { MarketComponent } from './market.component';
 import { MarketRouter } from './market.router';
+import { AppModuleProviders } from '../../providers/providers.module';
 
 @NgModule({
 	declarations: [MarketComponent],
-	imports: [MarketRouter, HeadertModule, TabsModule, CardModule],
+	imports: [CommonModule, MarketRouter, HeadertModule, TabsModule, CardModule, AppModuleProviders, FooterModule],
 })
 export class MarketModule {}

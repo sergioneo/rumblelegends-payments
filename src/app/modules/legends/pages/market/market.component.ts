@@ -1,5 +1,6 @@
 // Angular dependencies
 import { Component, OnInit } from '@angular/core';
+import { CardsProvider } from '../../providers';
 
 @Component({
 	selector: 'market-component',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 	templateUrl: './market.component.html',
 })
 export class MarketComponent implements OnInit {
-	constructor() {}
+	private cardsService: Array<any> = [];
+	constructor(private cardsProvider: CardsProvider) {}
 	public ngOnInit() {
-		console.log('entro');
+		this.cardsProvider.getBeastsMarketPlace().subscribe(
+			(data) => {
+				this.cardsService = data.hits;
+			},
+			(err) => {
+				console.log(err);
+			}
+		);
 	}
 }

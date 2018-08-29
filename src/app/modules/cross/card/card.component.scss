@@ -1,14 +1,9 @@
 card-component {
   color: #ffff;
   .container-card {
-    margin-top: 30px;
+    width: 278px;
     &__content {
-      display: flex;
-      justify-content:center;
-      flex-wrap: wrap;
       &__single {
-        margin: 20px;
-
         &__element{
           position: absolute;
           margin-top: -157px;
@@ -49,7 +44,6 @@ card-component {
         &__background {
           img {
             height: 175px;
-            width: 278px;
           }
         }
 

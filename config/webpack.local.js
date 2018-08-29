@@ -289,18 +289,18 @@ let config = {
 		open: true,
 		hot: true,
 		inline: true,
-		/*proxy: {
-      '/**': {
-        target: {
-          host: '172.17.200.7',
-          protocol: 'https:',
-          port: 443
-        },
-        changeOrigin: true,
-        secure: false,
-        logLevel: 'info',
-      }
-    },*/
+		proxy: {
+			'/marketplace/**': {
+				target: {
+					host: 'beast-service-beta.herokuapp.com',
+					protocol: 'https:',
+					port: 443,
+				},
+				changeOrigin: true,
+				secure: false,
+				logLevel: 'info',
+			},
+		},
 		stats: {
 			colors: true,
 			chunks: false,
